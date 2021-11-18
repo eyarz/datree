@@ -2,9 +2,7 @@ name: Auto Assign to Project
 
 on:
   issues:
-    types: [opened, labeled]
-  issue_comment:
-    types: [created]
+    types: [labeled]
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
